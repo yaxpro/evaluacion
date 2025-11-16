@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Resultado Ejercicio 2{% endblock %}
+{% block content %}
+  <h2>Resultado Ejercicio 2</h2>
+  <p>Nombres ingresados: {{ nombres|join(', ') }}</p>
+  <p>Nombre más largo: <strong>{{ mayor }}</strong></p>
+  <p>Cantidad de caracteres: <strong>{{ longitud }}</strong></p>
+  <p><a class="btn" href="{{ url_for('ejercicio2') }}">Volver</a></p>
+{% endblock %}

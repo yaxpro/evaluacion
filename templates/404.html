@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}No encontrado{% endblock %}
+{% block content %}
+  <h2>404 - No encontrado</h2>
+  <p>La ruta solicitada no existe.</p>
+  <p><a class="btn" href="{{ url_for('index') }}">Ir al inicio</a></p>
+{% endblock %}

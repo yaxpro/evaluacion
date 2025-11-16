@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Ejercicio 2{% endblock %}
+{% block content %}
+  <h2>Ejercicio 2</h2>
+  <p>Ingrese 3 nombres diferentes. Se mostrará el de mayor cantidad de caracteres y su longitud.</p>
+  <form method="post">
+    <label>Nombre 1: <input type="text" name="nombre1" required></label>
+    <label>Nombre 2: <input type="text" name="nombre2" required></label>
+    <label>Nombre 3: <input type="text" name="nombre3" required></label>
+    <button type="submit">Enviar</button>
+  </form>
+{% endblock %}

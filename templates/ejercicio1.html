@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Ejercicio 1{% endblock %}
+{% block content %}
+  <h2>Ejercicio 1</h2>
+  <p>Ingrese 3 notas (10 a 70) y asistencia (0 a 100). Al enviar, se mostrará el promedio y si aprueba (>=40 y asistencia >=75%).</p>
+  <form method="post">
+    <label>Nota 1: <input type="number" name="nota1" min="10" max="70" step="0.01" required></label>
+    <label>Nota 2: <input type="number" name="nota2" min="10" max="70" step="0.01" required></label>
+    <label>Nota 3: <input type="number" name="nota3" min="10" max="70" step="0.01" required></label>
+    <label>Asistencia: <input type="number" name="asistencia" min="0" max="100" step="0.1" required></label>
+    <button type="submit">Enviar</button>
+  </form>
+{% endblock %}

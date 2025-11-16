@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+  <h2>Menú principal</h2>
+  <div class="menu">
+    <a class="btn" href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+    <a class="btn" href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+  </div>
+  <p>Demostraciones: <a href="{{ url_for('saludo', nombre='Mundo') }}">/saludo/&lt;nombre&gt;</a> • <a href="{{ url_for('abortar') }}">abortar 404</a></p>
+{% endblock %}
