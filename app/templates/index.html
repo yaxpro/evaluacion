@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+  <section class="hero">
+    <h2>Bienvenido</h2>
+    <p>Selecciona un ejercicio</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+      <a class="btn btn-secondary" href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+    </div>
+  </section>
+{% endblock %}

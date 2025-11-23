@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Ejercicio 1{% endblock %}
+{% block content %}
+  <h2>Ejercicio 1</h2>
+  <form method="post" class="form">
+    <div class="form-row">
+      <label>Nombre</label>
+      <input type="text" name="nombre" value="{{ nombre or '' }}" required>
+    </div>
+    <div class="form-row">
+      <label>Edad</label>
+      <input type="number" name="edad" value="{{ edad or '' }}" min="0" required>
+    </div>
+    <div class="form-row">
+      <label>Tarros de pintura</label>
+      <input type="number" name="tarros" value="{{ tarros or '' }}" min="0" required>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-primary" type="submit">Calcular</button>
+      <a class="btn" href="{{ url_for('index') }}">Volver</a>
+    </div>
+  </form>
+{% endblock %}

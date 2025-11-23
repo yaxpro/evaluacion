@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Ejercicio 2{% endblock %}
+{% block content %}
+  <h2>Ejercicio 2 - Login</h2>
+  <form method="post" class="form">
+    <div class="form-row">
+      <label>Usuario</label>
+      <input type="text" name="usuario" required>
+    </div>
+    <div class="form-row">
+      <label>Contraseña</label>
+      <input type="password" name="password" required>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-secondary" type="submit">Ingresar</button>
+      <a class="btn" href="{{ url_for('index') }}">Volver</a>
+    </div>
+  </form>
+  {% if message is not none %}
+    <div class="message {{ 'ok' if ok else 'error' }}">{{ message }}</div>
+  {% endif %}
+{% endblock %}
